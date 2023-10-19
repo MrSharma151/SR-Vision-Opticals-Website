@@ -1,0 +1,43 @@
+.eyeTesting{
+    text-align: center;
+    margin-top: 7vh;
+}
+
+.row{
+    margin-top: 8vh;
+}
+.imgColLeft{
+    width: 45vw;
+    height: 55vh;
+    border-bottom-right-radius: 250px;
+    /* border-top-right-radius: 100px; */
+}
+.paraColRight>div>h3{
+    margin-left: 2vw;
+    font-weight: bold;
+}
+.paraColRight>div>p{
+    font-style: normal;
+    font-weight:100;
+    font-size:medium;
+    margin-top: 5px;
+}
+
+.imgColRight{
+    width: 45vw;
+    height: 55vh;
+    margin-left: 3vw;
+    border-top-left-radius: 250px;
+    /* border-bottom-left-radius: 250px; */
+}
+.paraColLeft>div>h3{
+    margin-left: 0vw;
+    font-weight: bold;
+}
+.paraColLeft>div>p{
+    font-style: normal;
+    font-weight:100;
+    font-size:medium;
+    margin-top: 5px;
+    margin-left: 0px;
+}

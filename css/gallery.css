@@ -1,0 +1,9 @@
+.gallery{
+    text-align: center;
+    margin-top: 7vh;
+}
+.galleryContainer img{
+    height: 45vh;
+    width: 28vw;
+    padding: 1%;
+}

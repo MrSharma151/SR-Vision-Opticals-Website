@@ -1,0 +1,217 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Upper-Navbar */
+.upperNavbar{
+    display: flex;
+    color: white;
+    height: 5vh;
+    width: 100vw;
+    text-align: center;
+    align-items: center;
+}
+.upperNavbar a{
+    color: white;
+}
+.location{
+    margin-left: 44vw;
+}
+
+/* Corousel */
+.customCarouselItem{
+    height: 70vh; 
+    width: 100vw;
+} 
+
+/* EyeWears */
+.eyeWears{
+    text-align: center;
+    margin-top: 7vh;
+}
+.customCard img{
+    width: 25vw;
+    height: 35vh;
+    margin-left: 0px;
+    padding: 0%;
+}
+.card{
+    margin: 0;
+    padding: 0;
+}
+.customCard{
+    width: 25vw;
+    margin: 2%;
+    height: 60vh;
+}
+.customCard h5{
+    font-weight: bold;
+}
+
+
+/* Brands */
+.brands{
+    text-align: center;
+    margin-top: 10vh;
+}
+.brandLogos img{
+    width: 200px;
+
+}
+
+/* What's makes us stand apart? */
+.midSection{
+    text-align: center;
+    margin-top: 10vh;
+}
+.midContainer{
+    margin-top: 5vh;
+    margin-left: 15vw;
+}
+.col{
+    display: flex;
+}
+.row{
+    margin-top: 5vh;
+}
+.col p{
+    margin-top: 2vw;
+    color: black;
+    margin-left: 2vw;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+/* About Us */
+.aboutUs{
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+.aboutUsContainer div{
+    border-radius: 20px;
+}
+.aboutImg{
+    height: 80vh;
+    border-radius: 20px;
+}
+
+/* Testimonials */
+.testimonials{
+    text-align: center;
+    margin-top: 10vh;
+}
+.testimonialCarouselItem{
+    height: 25vh;
+}
+.testimonialCarouselItem blockquote{
+    text-align: center;
+    color: purple;
+    align-items: center;
+    margin-top: 7vh;
+}
+
+/* Contact Us */
+.contactUs{
+    text-align: center;
+    margin-top: 7vh;
+}
+.ContactUsContainer{
+    height: 40vh;
+   
+}
+.ContactUsCol{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid skyblue;
+    align-items: center;
+    text-align: center;
+}
+.ContactUsColLast{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.ContactUsCol img{
+    height: 10vh;
+}
+.ContactUsColLast img{
+    height: 10vh;
+}
+.ContactUsCol h3{
+    margin-top: 2vh;
+    color: black;
+}
+.ContactUsColLast h3{
+    margin-top: 2vh;
+    color: black;
+}
+.ContactUsCol p{
+    color: rgba(94, 89, 118, 0.923);
+    font-size:medium;
+}
+.ContactUsColLast p{
+    color: rgba(94, 89, 118, 0.923);
+    font-size:medium;
+}
+
+/* Form */
+.formContainer{
+    height: 70vh;
+    background-image: url("../photos/contact-us.jpg");
+    background-position: 0%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.contactUsForm{
+    width: 40vw;    
+}
+
+/* Footer */
+.footer{
+    display: flex;
+    flex-direction: row;
+}
+.footer a{
+    color: black;
+    text-decoration: none;
+}
+.footer h3{
+    font-size: medium;
+    font-weight: bold;
+}
+.footerCol{
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Copyright Footer */
+.copyright p{ 
+    text-align: center;
+    align-items: center;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    /* background-color: skyblue; */
+    color: black;
+}
+
+/* Call Us */
+.callUs>img{
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+    z-index: 999;
+    height: 60px;
+}
+/* whatsAppIcon gif */
+.whatsAppIcon>img{
+    position: fixed;
+    bottom: 25px;
+    left: 20px;
+    z-index: 999;
+    height: 65px;
+}
