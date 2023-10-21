@@ -852,7 +852,7 @@ span {
            
         /* Corousel */
         .customCarouselItem {
-            height: 65vh;
+            height: 60vh;
             width: 100vw;
         }
         .customCarouselItem h5 {
