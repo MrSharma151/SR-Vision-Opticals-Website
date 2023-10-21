@@ -77,10 +77,10 @@
             <a class="nav-link" href="index.html">BRANDS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#eyeTesting">EYE TESTING</a>
+            <a class="nav-link" href="gallery.html">GALLERY</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="gallery.html">GALLERY</a>
+            <a class="nav-link active" href="#eyeTesting">EYE TESTING</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="index.html">ABOUT US</a>
@@ -102,7 +102,7 @@
     <h1>EYE TESTING</h1>
   </div>
   <div class="container eyeTestingContainer">
-    <div class="row">
+    <div class="row rowLeft">
         <div class="col imgColLeft">
             <img src="photos/refraction.jpg" alt="">
         </div>
@@ -114,7 +114,7 @@
             </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row rowRight">
         <div class="col paraColLeft">
             <div>
                 <h3>Color Vision Test</h3>
@@ -125,7 +125,7 @@
             <img src="photos/colorVisionTest.jpeg" alt="">
         </div>
     </div>
-    <div class="row">
+    <div class="row rowLeft">
         <div class="col imgColLeft">
             <img src="photos/contactLens.avif" alt="">
         </div>
@@ -136,7 +136,7 @@
             </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row rowRight">
         <div class="col paraColLeft">
             <div>
                 <h3>Cataract Consultancy</h3>
@@ -147,7 +147,7 @@
             <img src="photos/cataract.jpg" alt="">
         </div>
     </div>
-    <div class="row">
+    <div class="row rowLeft">
         <div class="col imgColLeft">
             <img src="photos/eyeallergy.jpg" alt="">
         </div>
@@ -163,33 +163,33 @@
 
 
    <!-- Contact Us -->
-   <div class="contactUs" id="contactUs">
-    <h1>CONTACT US</h1>
-  </div>
-  <div class="container ContactUsContainer">
-    <div class="row">
-      <div class="col ContactUsCol">
-        <img src="photos/icons/map.png" alt="location">
-        <h3>Our Location</h3>
-        <p>R-11/179, Sec-10 Market, Raj Nagar, Ghaziabad</p>
-      </div>
-      <div class="col ContactUsCol">
-        <img src="photos/icons/mail.png" alt="email">
-        <h3>General Enquiries</h3>
-        <p>Email: srvision.opticals@gmail.com</p>
-      </div>
-      <div class="col ContactUsCol">
-        <img src="photos/icons/phone.png" alt="mobile">
-        <h3>Call Us</h3>
-        <p>Mob: +91 9999233771</p>
-      </div>
-      <div class="col ContactUsColLast">
-        <img src="photos/icons/clock.png" alt="clock">
-        <h3>Our Timings</h3>
-        <p>Monday- Sunday : 10AM - 10PM</p>
-      </div>
+ <div class="contactUs" id="contactUs">
+  <h1>CONTACT US</h1>
+</div>
+<div class="container ContactUsContainer">
+  <div class="row">
+    <div class="col ContactUsCol">
+      <img src="photos/icons/map.png" alt="location">
+      <h3>Our Location</h3>
+      <p>R-11/179, Sec-10 Market, Raj Nagar, Ghaziabad</p>
+    </div>
+    <div class="col ContactUsCol ContactUsColDisabled">
+      <img src="photos/icons/mail.png" alt="email">
+      <h3>General Enquiries</h3>
+      <p>Email: srvision.opticals@gmail.com</p>
+    </div>
+    <div class="col ContactUsCol ContactUsColDisabled">
+      <img src="photos/icons/phone.png" alt="mobile">
+      <h3>Call Us</h3>
+      <p>Mob: +91 9999233771</p>
+    </div>
+    <div class="col ContactUsColLast">
+      <img src="photos/icons/clock.png" alt="clock">
+      <h3>Our Timings</h3>
+      <p>Monday- Sunday : 10AM - 10PM</p>
     </div>
   </div>
+</div>
 
   <!-- Form -->
   <div class="container formContainer">
@@ -217,16 +217,17 @@
           <button type="submit" class="btn btn-primary">Submit</button>
         </div>
       </div>
+
     </form>
   </div>
 
-  <!-- Google MAp -->
-  <div class="container">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d218.76664130234502!2d77.447851512539!3d28.6816807595148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf19865d9bb51%3A0xd2e504278c8aee1f!2sSR%20VISION%20OPTICALS!5e0!3m2!1sen!2sin!4v1697200913902!5m2!1sen!2sin"
-      width="1300" height="400" style="border: 2px;" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
+ <!-- Google MAp -->
+ <div class="container mapContainer">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d218.76664130234502!2d77.447851512539!3d28.6816807595148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf19865d9bb51%3A0xd2e504278c8aee1f!2sSR%20VISION%20OPTICALS!5e0!3m2!1sen!2sin!4v1697200913902!5m2!1sen!2sin"
+    allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
 
    <!-- Footer -->
    <div class="container">
@@ -274,14 +275,13 @@
   <!-- Copyright Section -->
   <div class="copyright">
     <hr>
-    <p>Copyright 2023 - 2024, SR Vision Opticals, All Rights Reserved.</p>
+    <p>&#169; Copyright 2023 - 2024, SR Vision Opticals, All Rights Reserved.</p>
   </div>
 
   <!-- Floating Call US icon-->
   <a class="callUs" href="tel:+919999233771">
     <img src="photos/icons/callUs.gif" alt="">
   </a>
-
   <!-- Floating whatsApp icon -->
   <a class="whatsAppIcon" href="tel:+919999233771">
     <img src="photos/icons/whatsapp-gif.gif" alt="">

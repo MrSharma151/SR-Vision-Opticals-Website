@@ -1,9 +1,33 @@
-.gallery{
-    text-align: center;
-    margin-top: 7vh;
+@media only screen and (min-width: 1023px){
+    .gallery{
+        text-align: center;
+        margin-top: 7vh;
+    }
+    .galleryContainer img{
+        height: 45vh;
+        width: 28vw;
+        padding: 1%;
+    }
 }
-.galleryContainer img{
-    height: 45vh;
-    width: 28vw;
-    padding: 1%;
+@media (min-width: 768px) and (max-width: 1023px){
+    .gallery{
+        text-align: center;
+        margin-top: 7vh;
+    }
+    .galleryContainer img{
+        height: 45vh;
+        width: 40vw;
+        padding: 1%;
+    }
+}
+@media (max-width: 767px){
+    .gallery{
+        text-align: center;
+        margin-top: 7vh;
+    }
+    .galleryContainer img{
+        height: 45vh;
+        width: 97vw;
+        padding: 2%;
+    }
 }

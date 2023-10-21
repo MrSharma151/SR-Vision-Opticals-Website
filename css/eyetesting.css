@@ -1,43 +1,98 @@
-.eyeTesting{
-    text-align: center;
-    margin-top: 7vh;
+@media only screen and (min-width: 1023px){
+    .eyeTesting{
+        text-align: center;
+        margin-top: 7vh;
+    }
+    
+    .row{
+        margin-top: 8vh;
+    }
+    .imgColLeft{
+        width: 45vw;
+        height: 70vh;
+        border-bottom-right-radius: 250px;
+    }
+    .paraColRight>div>h3{
+        margin-left: 2vw;
+        font-weight: bold;
+    }
+    .paraColRight>div>p{
+        font-weight:100;
+        font-size:medium;
+        margin-top: 5px;
+    }
+    
+    .imgColRight{
+        width: 45vw;
+        height: 70vh;
+        margin-left: 3vw;
+        border-top-left-radius: 250px;
+    }
+    .paraColLeft>div>h3{
+        margin-left: 0vw;
+        font-weight: bold;
+    }
+    .paraColLeft>div>p{
+        font-weight:100;
+        font-size:medium;
+        margin-top: 5px;
+        margin-left: 0px;
+    }   
 }
-
-.row{
-    margin-top: 8vh;
+@media (min-width: 768px) and (max-width: 1023px){
+    .eyeTesting{
+        text-align: center;
+        margin-top: 7vh;
+    }
+    .imgColLeft{
+        width: 35vw;
+    }   
+    .paraColRight>div>p{
+        font-weight: 100;
+        font-size:13px;
+        margin-top: 5px;
+    } 
+    .imgColRight{
+        width: 35vw;
+        margin-left: 3vw;
+    }
+    .paraColLeft>div>p{
+        font-weight:100;
+        font-size:13px;
+        margin-top: 5px;
+        margin-left: 0px;
+    } 
 }
-.imgColLeft{
-    width: 45vw;
-    height: 55vh;
-    border-bottom-right-radius: 250px;
-    /* border-top-right-radius: 100px; */
-}
-.paraColRight>div>h3{
-    margin-left: 2vw;
-    font-weight: bold;
-}
-.paraColRight>div>p{
-    font-style: normal;
-    font-weight:100;
-    font-size:medium;
-    margin-top: 5px;
-}
-
-.imgColRight{
-    width: 45vw;
-    height: 55vh;
-    margin-left: 3vw;
-    border-top-left-radius: 250px;
-    /* border-bottom-left-radius: 250px; */
-}
-.paraColLeft>div>h3{
-    margin-left: 0vw;
-    font-weight: bold;
-}
-.paraColLeft>div>p{
-    font-style: normal;
-    font-weight:100;
-    font-size:medium;
-    margin-top: 5px;
-    margin-left: 0px;
+@media (max-width: 767px){
+    .eyeTesting{
+        text-align: center;
+        margin-top: 7vh;
+    }
+    .rowLeft{
+        display: flex;
+        flex-direction: column;
+    }
+    .rowRight{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .paraColRight>div>h3{
+        margin-top: 2vw;
+        font-weight: bold;
+    }
+    .paraColRight>div>p{
+        font-weight:100;
+        font-size:small;
+        margin-top: 5px;
+    }
+    .paraColLeft>div>h3{
+        margin-top: 2vw;
+        font-weight: bold;
+    }
+    .paraColLeft>div>p{
+        font-weight:100;
+        font-size:small;
+        margin-top: 5px;
+        margin-left: 0px;
+    } 
 }

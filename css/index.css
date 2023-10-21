@@ -1,217 +1,1101 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
+* {
+    /* font-family: Arial, Helvetica, sans-serif; */
     overflow-x: hidden;
 }
 
-/* Upper-Navbar */
-.upperNavbar{
-    display: flex;
-    color: white;
-    height: 5vh;
-    width: 100vw;
-    text-align: center;
-    align-items: center;
-}
-.upperNavbar a{
-    color: white;
-}
-.location{
-    margin-left: 44vw;
+/* For Headings  */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lato', sans-serif;
 }
 
-/* Corousel */
-.customCarouselItem{
-    height: 70vh; 
-    width: 100vw;
-} 
-
-/* EyeWears */
-.eyeWears{
-    text-align: center;
-    margin-top: 7vh;
-}
-.customCard img{
-    width: 25vw;
-    height: 35vh;
-    margin-left: 0px;
-    padding: 0%;
-}
-.card{
-    margin: 0;
-    padding: 0;
-}
-.customCard{
-    width: 25vw;
-    margin: 2%;
-    height: 60vh;
-}
-.customCard h5{
-    font-weight: bold;
+/* For Body Text */
+p,
+a,
+li,
+span {
+    font-family: 'Open Sans', sans-serif;
 }
 
 
-/* Brands */
-.brands{
-    text-align: center;
-    margin-top: 10vh;
+/* MEDIA QUERIES */
+/* For large desktop */
+@media only screen and (min-width: 1300px) {
+
+    /* Upper-Navbar */
+    .upperNavbar {
+        height: 6vh;
+        width: 100vw;
+    }
+    .upperNavbar img{
+        width: 30px;
+        height: 28px;
+    }
+    .upperNavbar a {
+        color: white;
+        margin-left: 10px;
+    }
+
+    /* Navbar */
+    #navLogo{
+        height: 60px;
+    }
+
+    /* Corousel */
+    .customCarouselItem {
+        height: 70vh;
+        width: 100vw;
+    }
+    .customCarouselItem h5 {
+        font-size: larger;
+        font-weight: bolder;
+    }
+    .customCarouselItem p {
+        font-size: medium;
+    }
+    .customCarouselItem img {
+        height: 70vh;
+        width: 100vw;
+    }
+
+    /* EyeWears */
+    .eyeWears {
+        text-align: center;
+        margin-top: 7vh;
+    }
+    .customCard img {
+        width: 26vw;
+        height: 35vh;
+    }
+    .card {
+        margin: 0;
+        padding: 0;
+    }
+    .customCard {
+        width: 26vw;
+        margin: 1.5%;
+    }
+    .customCard h5 {
+        font-weight: bold;
+    }
+
+    /* Brands */
+    .brands {
+        text-align: center;
+        margin-top: 10vh;
+    }
+    .brandLogos1 img {
+        width: 20vw;
+        height: 10vh;
+        padding: 8px;
+    }
+    .brandLogos2 {
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+    }
+    .brandLogos2 img {
+        width: 20vw;
+        height: 10vh;
+        padding: 8px;
+    }
+    .brandLogos3 {
+        margin-left: 6vw;
+        margin-right: 6vw;
+    }
+    .brandLogos3 img {
+        width: 20vw;
+        height: 10vh;
+        padding: 8px;
+    }
+
+    /* What's makes us stand apart? */
+    .midSection {
+        text-align: center;
+        margin-top: 10vh;
+    }
+    .midContainer {
+        margin-top: 5vh;
+        margin-left: 15vw;
+    }
+    .midContainer img{
+        height: 15vh;
+    }
+    .midContainerCol2 img{
+        height: 20vh;
+    }
+    .col {
+        display: flex;
+    }
+    .row {
+        margin-top: 5vh;
+    }
+    .col p {
+        margin-top: 2vw;
+        color: black;
+        margin-left: 2vw;
+        font-size: larger;
+        font-weight: bolder;
+    }
+
+    /* About Us */
+    .aboutUs {
+        text-align: center;
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+    }
+    .aboutUsContainer div {
+        border-radius: 20px;
+    }
+    .aboutImg {
+        height: 80vh;
+        border-radius: 20px;
+    }
+    .aboutUsContainer p {
+        font-size: medium;
+    }
+
+    /* Testimonials */
+    .testimonials {
+        text-align: center;
+        margin-top: 10vh;
+    }
+    .testimonialCarouselItem {
+        height: 33vh;
+    }
+    .testimonialCarouselItem blockquote {
+        text-align: center;
+        color: purple;
+        font-size: medium;
+        align-items: center;
+        margin-top: 7vh;
+    }
+    .testimonialCarouselItem blockquote footer {
+        font-size: large;
+    }
+
+    /* Contact Us */
+    .contactUs {
+        text-align: center;
+        margin-top: 7vh;
+    }
+    .ContactUsContainer {
+        height: 44vh;
+    }
+    .ContactUsCol {
+        display: flex;
+        flex-direction: column;
+        border-right: 1px solid skyblue;
+        align-items: center;
+        text-align: center;
+    }
+    .ContactUsColLast {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .ContactUsCol img {
+        height: 10vh;
+    }
+    .ContactUsColLast img {
+        height: 10vh;
+    }
+    .ContactUsCol h3 {
+        margin-top: 2vh;
+        color: black;
+    }
+    .ContactUsColLast h3 {
+        margin-top: 2vh;
+        color: black;
+    }
+    .ContactUsCol p {
+        color: rgba(94, 89, 118, 0.923);
+        font-size: medium;
+    }
+    .ContactUsColLast p {
+        color: rgba(94, 89, 118, 0.923);
+        font-size: medium;
+    }
+
+    /* Form */
+    .formContainer {
+        height: 70vh;
+        background-image: url("../photos/contact-us.jpg");
+        background-position: 0%;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .contactUsForm {
+        width: 40vw;
+    }
+
+    /* Google MAp */
+    .mapContainer iframe{
+        width: 1300px;
+        height: 400px;
+    }
+
+    /* Footer */
+    .footer {
+        display: flex;
+        flex-direction: row;
+    }
+    .footer a {
+        color: black;
+        text-decoration: none;
+    }
+    .footer h3 {
+        font-size: medium;
+        font-weight: bold;
+    }
+    .footerCol {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    /* Copyright Footer */
+    .copyright p {
+        text-align: center;
+        align-items: center;
+        margin-top: 3vh;
+        margin-bottom: 2vh;
+        /* background-color: skyblue; */
+        color: black;
+    }
+
+    /* Call Us */
+    .callUs>img {
+        position: fixed;
+        bottom: 25px;
+        right: 20px;
+        z-index: 999;
+        height: 60px;
+    }
+
+    /* whatsAppIcon gif */
+    .whatsAppIcon>img {
+        position: fixed;
+        bottom: 25px;
+        left: 20px;
+        z-index: 999;
+        height: 65px;
+    }
 }
-.brandLogos img{
-    width: 200px;
+
+/* For laptops */
+@media only screen and (min-width: 1024px) and (max-width: 1299px) {
+
+    /* Upper-Navbar */
+    .upperNavbar {
+        height: 5vh;
+        width: 100vw;
+    }
+    .upperNavbar a {
+        color: white;
+        margin-left: 10px;
+    }
+    .upperNavbar img{
+        height: 25px;
+        width: 25px;
+    }
+
+    /* Navbar */
+    #navLogo{
+        height: 7vh;
+        width: 16vw;
+    }
+    .nav-item a{
+        font-size: small;
+        font-weight: bold;
+    }
+    
+    /* Corousel */
+    .customCarouselItem {
+        height: 70vh;
+        width: 100vw;
+    }
+    .customCarouselItem h5 {
+        font-size: larger;
+        font-weight: bolder;
+    }
+    .customCarouselItem p {
+        font-size: medium;
+    }
+    .customCarouselItem img {
+        height: 70vh;
+        width: 100vw;
+    }
+
+    /* EyeWears */
+    .eyeWears {
+        text-align: center;
+        margin-top: 7vh;
+    }
+    .customCard img {
+        width: 26vw;
+        height: 35vh;
+    }
+    .card {
+        margin: 0;
+        padding: 0;
+    }
+    .customCard {
+        width: 26vw;
+        margin: 1.5%;
+    }
+    .customCard h5 {
+        font-weight: bold;
+    }
+
+    /* Brands */
+    .brands {
+        text-align: center;
+        margin-top: 10vh;
+    }
+    .brandLogos1 img {
+        width: 20vw;
+        height: 10vh;
+        padding: 8px;
+    }
+    .brandLogos2 {
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+    }
+    .brandLogos2 img {
+        width: 20vw;
+        height: 10vh;
+        padding: 8px;
+    }
+    .brandLogos3 {
+        margin-left: 6vw;
+        margin-right: 6vw;
+    }
+    .brandLogos3 img {
+        width: 20vw;
+        height: 10vh;
+        padding: 8px;
+    }
+
+    /* What's makes us stand apart? */
+    .midSection {
+        text-align: center;
+        margin-top: 10vh;
+    }
+    .midContainer {
+        margin-top: 5vh;
+        margin-left: 15vw;
+    }
+    .midContainer img{
+        height: 15vh;
+    }
+    .midContainerCol2 img{
+        height: 20vh;
+    }
+    .col {
+        display: flex;
+    }
+    .row {
+        margin-top: 5vh;
+    }
+    .col p {
+        margin-top: 2vw;
+        color: black;
+        margin-left: 2vw;
+        font-size: larger;
+        font-weight: bolder;
+    }
+
+    /* About Us */
+    .aboutUs {
+        text-align: center;
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+    }
+    .aboutUsContainer div {
+        border-radius: 20px;
+    }
+    .aboutImg {
+        height: 80vh;
+        border-radius: 20px;
+    }
+    .aboutUsContainer p {
+        font-size: medium;
+    }
+
+    /* Testimonials */
+    .testimonials {
+        text-align: center;
+        margin-top: 10vh;
+    }
+    .testimonialCarouselItem {
+        height: 35vh;
+    }
+    .testimonialCarouselItem blockquote {
+        text-align: center;
+        color: purple;
+        font-size: medium;
+        align-items: center;
+        margin-top: 7vh;
+    }
+    .testimonialCarouselItem blockquote footer {
+        font-size: large;
+    }
+
+    /* Contact Us */
+    .contactUs {
+        text-align: center;
+        margin-top: 7vh;
+    }
+    .ContactUsContainer {
+        height: 42vh;
+    }
+    .ContactUsCol {
+        display: flex;
+        flex-direction: column;
+        border-right: 1px solid skyblue;
+        align-items: center;
+        text-align: center;
+    }
+    .ContactUsColLast {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .ContactUsCol img {
+        height: 8vh;
+    }
+    .ContactUsColLast img {
+        height: 8vh;
+    }
+    .ContactUsCol h3 {
+        margin-top: 2vh;
+        color: black;
+        font-size: large;
+        font-weight: bold;
+    }
+    .ContactUsColLast h3 {
+        margin-top: 2vh;
+        color: black;
+        font-size: large;
+        font-weight: bold;
+    }
+    .ContactUsCol p {
+        color: rgba(94, 89, 118, 0.923);
+        font-size: small;
+        font-weight: bold;
+    }
+    .ContactUsColLast p {
+        color: rgba(94, 89, 118, 0.923);
+        font-size: small;
+        font-weight: bold;
+    }
+
+    /* Form */
+    .formContainer {
+        height: 70vh;
+        background-image: url("../photos/contact-us.jpg");
+        background-position: 0%;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .contactUsForm {
+        width: 40vw;
+    }
+
+     /* Google MAp */
+     .mapContainer iframe{
+        width: 1300px;
+        height: 400px;
+    }
+
+    /* Footer */
+    .footer {
+        display: flex;
+        flex-direction: row;
+    }
+    .footer a {
+        color: black;
+        text-decoration: none;
+    }
+    .footer h3 {
+        font-size: medium;
+        font-weight: bold;
+    }
+    .footerCol {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    /* Copyright Footer */
+    .copyright p {
+        text-align: center;
+        align-items: center;
+        margin-top: 3vh;
+        margin-bottom: 2vh;
+        /* background-color: skyblue; */
+        color: black;
+    }
+
+    /* Call Us */
+    .callUs>img {
+        position: fixed;
+        bottom: 25px;
+        right: 20px;
+        z-index: 999;
+        height: 55px;
+    }
+
+    /* whatsAppIcon gif */
+    .whatsAppIcon>img {
+        position: fixed;
+        bottom: 25px;
+        left: 20px;
+        z-index: 999;
+        height: 60px;
+    }
 
 }
 
-/* What's makes us stand apart? */
-.midSection{
-    text-align: center;
-    margin-top: 10vh;
-}
-.midContainer{
-    margin-top: 5vh;
-    margin-left: 15vw;
-}
-.col{
-    display: flex;
-}
-.row{
-    margin-top: 5vh;
-}
-.col p{
-    margin-top: 2vw;
-    color: black;
-    margin-left: 2vw;
-    font-size: larger;
-    font-weight: bolder;
-}
-
-/* About Us */
-.aboutUs{
-    text-align: center;
-    margin-top: 10vh;
-    margin-bottom: 5vh;
-}
-.aboutUsContainer div{
-    border-radius: 20px;
-}
-.aboutImg{
-    height: 80vh;
-    border-radius: 20px;
-}
-
-/* Testimonials */
-.testimonials{
-    text-align: center;
-    margin-top: 10vh;
-}
-.testimonialCarouselItem{
-    height: 25vh;
-}
-.testimonialCarouselItem blockquote{
-    text-align: center;
-    color: purple;
-    align-items: center;
-    margin-top: 7vh;
-}
-
-/* Contact Us */
-.contactUs{
-    text-align: center;
-    margin-top: 7vh;
-}
-.ContactUsContainer{
-    height: 40vh;
+/* For Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
    
-}
-.ContactUsCol{
-    display: flex;
-    flex-direction: column;
-    border-right: 1px solid skyblue;
-    align-items: center;
-    text-align: center;
-}
-.ContactUsColLast{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-.ContactUsCol img{
-    height: 10vh;
-}
-.ContactUsColLast img{
-    height: 10vh;
-}
-.ContactUsCol h3{
-    margin-top: 2vh;
-    color: black;
-}
-.ContactUsColLast h3{
-    margin-top: 2vh;
-    color: black;
-}
-.ContactUsCol p{
-    color: rgba(94, 89, 118, 0.923);
-    font-size:medium;
-}
-.ContactUsColLast p{
-    color: rgba(94, 89, 118, 0.923);
-    font-size:medium;
+        /* Upper-Navbar */
+        .upperNavbar {
+            display: none;
+        }
+        
+        /* Navbar */
+        #navLogo{
+            height: 8vh;
+            width: 27vw;
+        }
+        .nav-item a{
+            font-size: small;
+            font-weight: bold;
+        }
+           
+        /* Corousel */
+        .customCarouselItem {
+            height: 70vh;
+            width: 100vw;
+        }
+        .customCarouselItem h5 {
+            font-size: larger;
+            font-weight: bolder;
+        }
+        .customCarouselItem p {
+            font-size: medium;
+        }
+        .customCarouselItem img {
+            height: 70vh;
+            width: 100vw;
+        }
+    
+        /* EyeWears */
+        .eyeWears {
+            text-align: center;
+            margin-top: 7vh;
+        }
+        .customCard img {
+            width: 37vw;
+            height: 35vh;
+        }
+        .card {
+            margin: 0;
+            padding: 0;
+        }
+        .customCard {
+            width: 37vw;
+            margin: 1.5%;
+        }
+        .customCard h5 {
+            font-weight: bold;
+        }
+    
+        /* Brands */
+        .brands {
+            text-align: center;
+            margin-top: 10vh;
+        }
+        .brandLogos1 img {
+            width: 20vw;
+            height: 10vh;
+            padding: 8px;
+        }
+        .brandLogos2 {
+            margin-left: 2.5vw;
+            margin-right: 2.5vw;
+        }
+        .brandLogos2 img {
+            width: 20vw;
+            height: 10vh;
+            padding: 8px;
+        }
+        .brandLogos3 {
+            margin-left: 6vw;
+            margin-right: 6vw;
+        }
+        .brandLogos3 img {
+            width: 20vw;
+            height: 10vh;
+            padding: 8px;
+        }
+    
+        /* What's makes us stand apart? */
+        .midSection {
+            text-align: center;
+            margin-top: 10vh;
+        }
+        .midContainer {
+            margin-top: 5vh;
+            margin-left: 12vw;
+        }
+        .midContainer img{
+            height: 12vh;
+        }
+        .midContainerCol2 img{
+            height: 18vh;
+        }
+        .col {
+            display: flex;
+        }
+        .row {
+            margin-top: 5vh;
+        }
+        .col p {
+            margin-top: 2vw;
+            color: black;
+            margin-left: 1vw;
+            font-size: medium;
+            font-weight: bold;
+        }
+    
+        /* About Us */
+        .aboutUs {
+            text-align: center;
+            margin-top: 10vh;
+            margin-bottom: 5vh;
+        }
+        .aboutUsContainer div {
+            border-radius: 20px;
+        }
+        .aboutImg {
+            height: 60vh;
+            border-radius: 20px;
+        }
+        .aboutUsContainer p {
+            font-size: 15px;
+        }
+    
+        /* Testimonials */
+        .testimonials {
+            text-align: center;
+            margin-top: 10vh;
+        }
+        .testimonialCarouselItem {
+            height: 45vh;
+        }
+        .testimonialCarouselItem blockquote {
+            text-align: center;
+            color: purple;
+            font-size: medium;
+            align-items: center;
+            margin-top: 7vh;
+        }
+        .testimonialCarouselItem blockquote footer {
+            font-size: large;
+        }
+    
+        /* Contact Us */
+        .contactUs {
+            text-align: center;
+            margin-top: 7vh;
+        }
+        .ContactUsContainer {
+            height: 42vh;
+        }
+        .ContactUsCol {
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid skyblue;
+            align-items: center;
+            text-align: center;
+        }
+        .ContactUsColLast {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .ContactUsCol img {
+            height: 8vh;
+        }
+        .ContactUsColLast img {
+            height: 8vh;
+        }
+        .ContactUsCol h3 {
+            margin-top: 2vh;
+            color: black;
+            font-size: large;
+            font-weight: bold;
+        }
+        .ContactUsColLast h3 {
+            margin-top: 2vh;
+            color: black;
+            font-size: large;
+            font-weight: bold;
+        }
+        .ContactUsCol p {
+            color: rgba(94, 89, 118, 0.923);
+            font-size: small;
+            font-weight: bold;
+        }
+        .ContactUsColLast p {
+            color: rgba(94, 89, 118, 0.923);
+            font-size: small;
+            font-weight: bold;
+        }
+    
+        /* Form */
+        .formContainer {
+            height: 70vh;
+            background-image: url("../photos/contact-us.jpg");
+            background-position: 0%;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .contactUsForm {
+            width: 40vw;
+        }
+
+        /* Google MAp */
+        .mapContainer iframe{
+            width: 1300px;
+            height: 400px;
+        }
+    
+        /* Footer */
+        .footer {
+            display: flex;
+            flex-direction: row;
+        }
+        .footer a {
+            color: black;
+            text-decoration: none;
+        }
+        .footer h3 {
+            font-size: medium;
+            font-weight: bold;
+        }
+        .footerCol {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+    
+        /* Copyright Footer */
+        .copyright p {
+            text-align: center;
+            align-items: center;
+            margin-top: 3vh;
+            margin-bottom: 2vh;
+            /* background-color: skyblue; */
+            color: black;
+        }
+    
+        /* Call Us */
+        .callUs>img {
+            position: fixed;
+            bottom: 25px;
+            right: 20px;
+            z-index: 999;
+            height: 50px;
+        }
+    
+        /* whatsAppIcon gif */
+        .whatsAppIcon>img {
+            position: fixed;
+            bottom: 25px;
+            left: 20px;
+            z-index: 999;
+            height: 55px;
+        } 
 }
 
-/* Form */
-.formContainer{
-    height: 70vh;
-    background-image: url("../photos/contact-us.jpg");
-    background-position: 0%;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: row-reverse;
-}
-.contactUsForm{
-    width: 40vw;    
-}
+/* For Mobiles */
+@media (max-width: 767px) {
 
-/* Footer */
-.footer{
-    display: flex;
-    flex-direction: row;
-}
-.footer a{
-    color: black;
-    text-decoration: none;
-}
-.footer h3{
-    font-size: medium;
-    font-weight: bold;
-}
-.footerCol{
-    display:flex;
-    flex-direction: column;
-    padding: 20px;
-}
+        /* Upper-Navbar */
+        .upperNavbar {
+            display: none;
+        }
+        
+        /* Navbar */
+        #navLogo{
+            height: 11vh;
+            width: 60vw;
+        }
+        .nav-item a{
+            font-size: small;
+            font-weight: bold;
+        }
+           
+        /* Corousel */
+        .customCarouselItem {
+            height: 65vh;
+            width: 100vw;
+        }
+        .customCarouselItem h5 {
+            font-size: medium;
+            font-weight: bold;
+        }
+        .customCarouselItem p {
+            font-size: small;
+        }
+        .customCarouselItem img {
+            height: 65vh;
+            width: 100vw;
+        }
+    
+        /* EyeWears */
+        .eyeWears {
+            text-align: center;
+            margin-top: 7vh;
+        }
+        .customCard img {
+            width: 93vw;
+            height: 35vh;
+        }
+        .card {
+            margin: 0;
+            padding: 0;
+        }
+        .customCard {
+            width: 93vw;
+            margin: 3.5%;
+        }
+        .customCard h5 {
+            font-weight: bold;
+        }
+    
+        /* Brands */
+        .brands {
+            text-align: center;
+            margin-top: 10vh;
+        }
+        .brandLogos1 img{
+            width: 24vw;
+            height: 10vh;
+            margin: 5px;
+        }
+        .brandLogos2 img{
+            width: 24vw;
+            height: 10vh;
+            margin: 5px;
+        }
+        .brandLogos3 img{
+            width: 31vw;
+            height: 10vh;
+            margin: 5px;
+        }
+        .imgDisabled{
+            display: none;
+        }
+    
+        /* What's makes us stand apart? */
+        .midSection {
+            text-align: center;
+            margin-top: 10vh;
+        }
+        .midContainer {
+            margin-top: 5vh;
+        }
+        .midContainer img{
+            height: 11vh;
+        }
+        .midContainerCol2 img{
+            height: 17vh;
+        }
+        .col {
+            display: flex;
+        }
+        .row {
+            margin-top: 5vh;
+        }
+        .col p {
+            margin-top: 2vw;
+            color: black;
+            margin-left: 2px;
+            font-size: medium;
+            font-weight: bold;
+        }
+    
+        /* About Us */
+        .aboutUs {
+            text-align: center;
+            margin-top: 10vh;
+            margin-bottom: 5vh;
+        }
+        .aboutUsContainer div {
+            border-radius: 20px;
+        }
+        .aboutImg {
+            height: 50vh;
+            border-radius: 20px;
+        }
+        .aboutUsContainer p {
+            font-size: 14px;
+        }
+    
+        /* Testimonials */
+        .testimonials {
+            text-align: center;
+            margin-top: 10vh;
+        }
+        .testimonialCarouselItem {
+            height: 50vh;
+        }
+        .testimonialCarouselItem blockquote {
+            text-align: center;
+            color: purple;
+            font-size: small;
+            align-items: center;
+            margin-top: 7vh;
+        }
+        .testimonialCarouselItem blockquote footer {
+            font-size: medium;
+        }
+    
+        /* Contact Us */
+        .contactUs {
+            text-align: center;
+            margin-top: 7vh;
+        }
+        .ContactUsContainer {
+            height: 40vh;
+        }
+        .ContactUsCol {
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid skyblue;
+            align-items: center;
+            text-align: center;
+        }
+        .ContactUsColLast {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .ContactUsCol img {
+            height: 7vh;
+        }
+        .ContactUsColLast img {
+            height: 7vh;
+        }
+        .ContactUsCol h3 {
+            margin-top: 2vh;
+            color: black;
+            font-size: medium;
+            font-weight: bold;
+        }
+        .ContactUsColLast h3 {
+            margin-top: 2vh;
+            color: black;
+            font-size: medium;
+            font-weight: bold;
+        }
+        .ContactUsCol p {
+            color: rgba(94, 89, 118, 0.923);
+            font-size: small;
+            /* font-weight: bold; */
+            text-wrap: wrap;
+        }
+        .ContactUsColLast p {
+            color: rgba(94, 89, 118, 0.923);
+            font-size: small;
+            /* font-weight: bold; */
+        }
+        .ContactUsColDisabled{
+            display: none;
+        }
+    
+        /* Form */
+        .formContainer {
+            height: 60vh;
+            background-image: url("../photos/contact-us.jpg");
+            background-position: 0%;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .contactUsForm {
+            width: 90vw;
+        }
 
-/* Copyright Footer */
-.copyright p{ 
-    text-align: center;
-    align-items: center;
-    margin-top: 3vh;
-    margin-bottom: 2vh;
-    /* background-color: skyblue; */
-    color: black;
-}
-
-/* Call Us */
-.callUs>img{
-    position: fixed;
-    bottom: 25px;
-    right: 20px;
-    z-index: 999;
-    height: 60px;
-}
-/* whatsAppIcon gif */
-.whatsAppIcon>img{
-    position: fixed;
-    bottom: 25px;
-    left: 20px;
-    z-index: 999;
-    height: 65px;
+        /* Google MAp */
+        .mapContainer iframe{
+            width: 92vw;
+            height: 45vh;
+        }
+    
+        /* Footer */
+        .footer {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+        .footer a {
+            color: black;
+            text-decoration: none;
+        }
+        .footer h3 {
+            font-size: medium;
+            font-weight: bold;
+        }
+        .footerCol {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+    
+        /* Copyright Footer */
+        .copyright p {
+            text-align: center;
+            align-items: center;
+            margin-top: 3vh;
+            margin-bottom: 2vh;
+            /* background-color: skyblue; */
+            color: black;
+            font-size: 13px;
+        }
+    
+        /* Call Us */
+        .callUs>img {
+            position: fixed;
+            bottom: 25px;
+            right: 20px;
+            z-index: 999;
+            height: 45px;
+        }
+    
+        /* whatsAppIcon gif */
+        .whatsAppIcon>img {
+            position: fixed;
+            bottom: 25px;
+            left: 20px;
+            z-index: 999;
+            height: 50px;
+        }   
 }
