@@ -39,7 +39,7 @@
         margin-left: 0px;
     }   
 }
-@media (min-width: 768px) and (max-width: 1023px){
+@media only screen and (min-width: 768px) and (max-width: 1023px){
     .eyeTesting{
         text-align: center;
         margin-top: 7vh;
