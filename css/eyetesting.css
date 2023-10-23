@@ -82,7 +82,7 @@
     }
     .paraColRight>div>p{
         font-weight:100;
-        font-size:small;
+        font-size:medium;
         margin-top: 5px;
     }
     .paraColLeft>div>h3{
@@ -91,7 +91,7 @@
     }
     .paraColLeft>div>p{
         font-weight:100;
-        font-size:small;
+        font-size:medium;
         margin-top: 5px;
         margin-left: 0px;
     } 
